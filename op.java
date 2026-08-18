@@ -29,3 +29,28 @@ public class OperacoesMatematicas {
         teclado.close();
     }
 }
+
+//progressão aritmética
+
+public class GeradorSequencia {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite o valor de A (início): ");
+        int a = scanner.nextInt();
+
+        System.out.print("Digite o valor de B (passo): ");
+        int b = scanner.nextInt();
+
+        System.out.print("Digite o valor de C (quantidade): ");
+        int c = scanner.nextInt();
+
+        int atual = a;
+        for (int i = 0; i < c; i++) {
+            System.out.print(atual + " ");
+            atual += b;
+        }
+
+        scanner.close();
+    }
+}
